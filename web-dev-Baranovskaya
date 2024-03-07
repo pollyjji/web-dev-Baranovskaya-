@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #FFB6C1;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 1600px; /* only for demonstration, should be removed */
+  background: #FFE4E1;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: circle;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #FFFAFA;
+  height: 1600px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #FFB6C1;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+
+<header>
+  <h2>Practical Work 1 354</h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+     <li><a href="#1">Question1</a></li>
+      <li><a href="#2">Question2</a></li>
+       <li><a href="#3">Question3</a></li>
+        <li><a href="#4">Question4</a></li>
+     <li><a href="#5">Question5</a></li>
+     <li><a href="#6">Question6</a></li>
+    </ul> 
+  </nav>
+ 
+  <article>
+  <dl>
+ 
+    <dt id="1" ><h1>Question1</h1></dt>
+    <h1>When HTML5 has become a standard? What were the main reasons for developing new standard?</h1>
+   <dd> HTML5 became a standard in October 2014. The main reasons for developing a new standard were to address the limitations of previous versions of HTML, improve support for multimedia content, enhance accessibility, and provide better structure and semantics for web documents.</dd>
+    <dl>
+    
+    
+  <dl>
+  
+    <dt id="2" ><h1>Question2</h1></dt>
+     <h1>What is a difference between W3C HTML5 and WHATWG HTML Living Standard?</h1>
+   <dd> The main difference between W3C HTML5 and WHATWG HTML Living Standard is in the development process and governance.</dd>
+   <dd>The W3C HTML5 standard is developed and maintained by the World Wide Web Consortium (W3C), while the WHATWG HTML Living Standard is a continuously updated version of HTML that is developed collaboratively by the Web Hypertext Application Technology Working Group (WHATWG).
+</dd>
+    
+    <dl>
+    <dl>
+ 
+    <dt id="3" ><h1>Question3</h1></dt>
+     <h1>What is the minimal HTML page code?</h1>
+   
+     <dd>The minimum required elements are the html, head, title, and body tags, and their corresponding end tags. </dd>
+   
+     <dl>
+    <dl>
+ 
+
+ 
+    <dt id="4" ><h1>Question4</h1></dt>
+    <h1>Comment on semantic and presentational markup. Why presentational markup is considered deprecated now?</h1>
+   <dd> Semantic markup focuses on using HTML elements to convey the meaning and structure of the content, making it more accessible to users and search engines. 
+</dd>
+    <dd>Presentational markup, on the other hand, involves using HTML elements for styling and layout purposes, which is now considered deprecated because it mixes content with presentation, making it harder to maintain and update websites.</dd>
+    <dl>
+    <dl>
+ 
+    <dt id="5" ><h1>Question5</h1></dt>
+    <h1>How you can check browser support for particular tag or attribute?</h1>
+   <dd> To check browser support for a particular tag or attribute, you can use websites like caniuse.com or MDN Web Docs. These resources provide information on browser compatibility for various web technologies.
+</dd>
+   
+    <dl>
+    <dl>
+ 
+    <dt id="6" ><h1>Question6</h1></dt>
+    <h1>What are the audio and video formats, officially supported by HTML standard? What happens if you use other format?</h1>
+   <dd> The audio formats officially supported by HTML standard are MP3, Ogg, and WAV. The video formats supported are MP4, WebM, and Ogg. </dd>
+    <dd>If you use other formats that are not supported by browsers, the content may not be displayed or played correctly on all devices and browsers. It's important to use the recommended formats to ensure compatibility and consistency across different platforms.</dd>
+    <dl>
+   
+    
+    
+    <video width="400" height="320" controls>
+  <source src="movie.mp4" type="video/mp4">
+  <source src="movie.ogg" type="video/ogg">
+Your browser does not support the video tag.
+</video>
+<p>
+Video courtesy of 
+<a href="https://www.youtube.com/watch?v=_1YrtzUSX4o&pp=ygUL0LjQsSDQsdCz0YM%3D" target="_blank">SB BSU</a>.
+</p>
+
+<audio controls>
+  <source src="sea.ogg" type="audio/ogg">
+  <source src="sea.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+    
+  </article>
+</section>
+
+
+<footer>
+  <p>This is my first experience of writing HTML code and it was quite positive! Thanks to the help of the teacher and the clear instructions of the site w3schools.com I was able to successfully master the basics of HTML. This is a great start for my path in HTML programming.</p>
+  <img src="https://media.licdn.com/dms/image/C4E0BAQFF4VQPXpNFZA/company-logo_200_200/0/1631375998899/sb_bsu_logo?e=2147483647&v=beta&t=A1ZtJVzN7IsH7bR4CxC8A8EVXZwn-DhSJyI_bui35ic" alt="SB BSU">
+</footer>
+
+</body>
+</html>
